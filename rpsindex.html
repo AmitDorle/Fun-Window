@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Rock Paper Scissors</title>
+    <link rel="stylesheet" href="./css/rpsstyle.css" />
+</head>
+
+<body>
+    <div class="title-container">
+        <h2>Rock Paper Scissors  <img src="./img/rock-paper-scissors.png" height="30px" width="30px"></h2>
+    </div>
+    <div class="head-container">
+        <h1>Let's Play Rock Paper Scissors!!</h1>
+        <h2>Write Your Choice In the Circle And Click Submit</h2>
+    </div>
+    <div class="img-container">
+        <button class="img-btn"><img src="./img/rocks.png" class="img">1</button>
+        <button class="img-btn"><img src="./img/paper.png" class="img">2</button>
+        <button class="img-btn"><img src="./img/scissors.png" class="img">3</button>
+    </div>
+    <div class="input-container">
+        <input type="text" id="choice" class="input-box" maxlength="1">
+    </div>
+    <div class="submit-btn-container">
+        <button onclick="rock()" class="submit-btn">Submit</button>
+        <a href="index.html"><button class="submit-btn">Restart</button></a>
+    </div>
+    <h1 id="answer" class="output"></h1>
+
+    <script>
+        function rock() {
+
+            var choices=['rock','paper','scissor'];
+            var b = choices[Math.floor(Math.random()*choices.length)];
+
+            var a = parseInt(document.getElementById('choice').value);
+            if (a == 1 && b== 'rock') 
+            {
+                document.getElementById('answer').innerHTML = ("Computer And You Both choose Rock So it's a Tie");
+            }
+            else if (a== 1 && b== 'paper')
+            {
+                document.getElementById('answer').innerHTML = ("Computer Choose Paper You Loose");
+            }
+            else if (a== 1 && b== 'scissor')
+            {
+                document.getElementById('answer').innerHTML = ("Computer Choose Scissor You Win");
+            }
+            else if (a == 2 && b== 'rock') 
+            {
+                document.getElementById('answer').innerHTML = ("Computer Choose Rock You Win");
+            }
+            else if (a== 2 && b== 'paper')
+            {
+                document.getElementById('answer').innerHTML = ("Computer And You Both choose Paper So it's a Tie");
+            }
+            else if (a== 2 && b== 'scissor')
+            {
+                document.getElementById('answer').innerHTML = ("Computer Choose Scissor You Loose");
+            }
+            else if (a == 3 && b== 'rock') 
+            {
+                document.getElementById('answer').innerHTML = ("Computer Choose Rock You Loose");
+            }
+            else if (a== 3 && b== 'paper')
+            {
+                document.getElementById('answer').innerHTML = ("Computer Choose Paper You Win");
+            }
+            else if (a== 3 && b== 'scissor')
+            {
+                document.getElementById('answer').innerHTML = ("Computer And You Both choose Scissor So it's a Tie");
+            }
+        }
+    </script>
+</body>
+
+</html>

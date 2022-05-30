@@ -1,0 +1,61 @@
+body {
+    background-color: rgb(244, 244, 153);
+    background-repeat: no-repeat;
+}
+
+.head-container {
+    text-align: center;
+    font-size: 25px;
+    border-radius: 12px;
+    margin: 10px;
+    background-color: rgb(186, 217, 244);
+}
+
+.head {
+    background: -webkit-linear-gradient(rgb(18, 247, 10), rgb(239, 20, 118));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.head1 {
+    background: -webkit-linear-gradient(rgb(245, 6, 6), rgb(33, 8, 255));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+}
+
+.iframe {
+    border-radius: 25px;
+    box-shadow: 0px 0px 5px green;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+}
+
+.btn-container {
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.btn {
+    height: 35px;
+    width: 200px;
+    border-radius: 10px;
+    border: 1px solid red;
+    font-size: 18px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background: rgb(238, 174, 202);
+    background: radial-gradient(circle, rgb(191, 210, 232), rgb(147, 200, 231) 100%);
+    box-shadow: 3px 2px 5px rgb(76, 242, 189);
+    cursor: pointer;
+}
+
+.btn:hover {
+    background: rgb(238, 174, 202);
+    background: radial-gradient(circle, rgb(129, 237, 176), rgb(234, 220, 138) 100%);
+    box-shadow: 3px 2px 5px rgb(233, 54, 141);
+}

@@ -1,0 +1,60 @@
+.head {
+    text-align: center;
+    height: 50px;
+    background-color: black;
+    color: whitesmoke;
+    border-radius: 20px;
+    box-shadow: 5px 5px 5px darkorange;
+}
+.dark {
+    text-align: center;
+    height: 50px;
+    background-color: black;
+    color: whitesmoke;
+    border-radius: 20px;
+    box-shadow: 5px 5px 5px darkorange;
+}
+
+.light {
+    text-align: center;
+    height: 50px;
+    background-color: whitesmoke;
+    color: black;
+    border-radius: 20px;
+    box-shadow: 5px 5px 5px darkorange;
+}
+.container {
+    margin-top: 100px;
+}
+
+.img {
+    height: 300px;
+    width: 300px;
+    border-radius: 30%;
+}
+
+.btn-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.btn {
+    font-size: 25px;
+    width: 100px;
+    height: 40px;
+    border-radius: 20px;
+    border: none;
+    box-shadow: 0px 0px 5px red;
+    background: rgb(238, 174, 202);
+    background: radial-gradient(circle, rgb(117, 207, 252) 0%, rgb(69, 245, 145) 100%);
+}
+
+.btn:hover {
+    width: 100px;
+    height: 40px;
+    border-radius: 20px;
+    border: none;
+    box-shadow: 0px 0px 5px red;
+    background: rgb(238, 174, 202);
+    background: radial-gradient(circle, rgb(253, 150, 48) 0%, rgb(242, 44, 14) 100%);
+}

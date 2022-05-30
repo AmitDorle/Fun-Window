@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Calculator</title>
+    <style>
+        .parent {
+            background-image: url('./img/bg.jpg');
+            background-size: contain;
+        }
+        
+    </style>
+    <link rel="stylesheet" href="./css/calcistyle.css" />
+
+    <script>
+        function add() {
+            var val1 = parseInt(document.getElementById("input-value1").value);
+
+            var val2 = parseInt(document.getElementById("input-value2").value);
+
+            var sum = val1 + val2;
+
+            document.getElementById("ans").innerHTML = "Sum of " + val1 + " and " + val2 + " is " + sum;
+        }
+        function sub() {
+            var val1 = parseInt(document.getElementById("input-value1").value);
+
+            var val2 = parseInt(document.getElementById("input-value2").value);
+
+            var minus = val1 - val2;
+
+            document.getElementById("ans").innerHTML = "Substraction of " + val1 + " and " + val2 + " is " + minus;
+        }
+        function mul() {
+            var val1 = parseInt(document.getElementById("input-value1").value);
+
+            var val2 = parseInt(document.getElementById("input-value2").value);
+
+            var mul = val1 * val2;
+
+            document.getElementById("ans").innerHTML = "Multiply of " + val1 + " and " + val2 + " is " + mul;
+        }
+        function div() {
+            var val1 = parseInt(document.getElementById("input-value1").value);
+
+            var val2 = parseInt(document.getElementById("input-value2").value);
+
+            var div = val1 / val2;
+
+            document.getElementById("ans").innerHTML = "Division of " + val1 + " and " + val2 + " is " + div;
+        }
+        function dark()
+        {
+            document.getElementById('mode').className='dark'
+        }
+        function light()
+        {
+            document.getElementById('mode').className='light'
+        }
+    </script>
+
+</head>
+
+<body class="parent">
+    <div class="title-container">
+        <h1><abbr title="USE ME">CALCULATOR</abbr></h1>
+    </div>
+    <div class="container">
+        <div class="main-div" id="mode">
+            <div class="sub-div">
+                <b>Val1:</b><input type="text" class="input-box" id="input-value1" /><br><br>
+                <b>Val2:</b><input type="text" class="input-box" id="input-value2" /><br><br><br><br>
+                <button class="btn" onclick="add()">+</button>
+                <button class="btn" onclick="sub()">-</button><br><br>
+                <button class="btn" onclick="mul()">*</button>
+                <button class="btn" onclick="div()">/</button><br><br>
+                <b style="font-size: 25px;">Output:</b><br>
+                <div id="ans" class="output" ></div>
+            </div>
+        </div>
+    </div>
+    <div class="btn-container">
+        <button class="mode-btn" onclick="dark()"><abbr title="Switch to Dark Mode">Dark</abbr></button>
+        <button class="mode-btn" onclick="light()"><abbr title="Switch to Light Mode">Light</abbr></button>
+    </div>
+
+
+</body>
+
+</html>
