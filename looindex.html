@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        .parent {
+            background-image: url('./img/light-bulb-bg.jpg');
+            background-repeat: no-repeat;
+            background-size: 1545px 850px;
+        }
+
+        .main-main-container {
+            display: flex;
+            justify-content: center;
+        }
+
+        .main-container {
+            height: 700px;
+            width: 700px;
+            display: flex;
+            justify-content: center;
+            border-radius: 50%;
+        }
+
+        
+    </style>
+    <link rel="stylesheet" href="./css/loostyle.css">
+    <script>
+        function on() {
+            document.getElementById("bulb").src = "./img/bulb-on.png";
+        }
+
+        function off() {
+            document.getElementById("bulb").src = "./img/bulb-off.png";
+        }
+        function dark() {
+            document.getElementById("heading").className = "head dark"
+        }
+        function light() {
+            document.getElementById("heading").className = "head light"
+        }
+    </script>
+
+</head>
+
+<body class="parent">
+    <div class="head" id="heading">
+        <h1>LIGHT_ON-OFF_FUN</h1>
+    </div>
+    <div class="main-main-container">
+        <div class="main-container">
+            <div class="container">
+
+                <img src="./img/bulb-off.png" id="bulb" class="img" />
+                <div class="btn-container">
+                    <button onClick="on(),light()" class="btn">ON</button>
+                    <button onClick="off(),dark()" class="btn">OFF</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
