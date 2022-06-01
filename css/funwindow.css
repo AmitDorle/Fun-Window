@@ -57,5 +57,5 @@ body {
 .btn:hover {
     background: rgb(238, 174, 202);
     background: radial-gradient(circle, rgb(129, 237, 176), rgb(234, 220, 138) 100%);
-    box-shadow: 3px 2px 5px rgb(233, 54, 141);
+    box-shadow: 3px 2px 5px rgb(212, 90, 149);
 }
