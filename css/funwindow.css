@@ -45,13 +45,14 @@ body {
     height: 35px;
     width: 200px;
     border-radius: 10px;
-    border: 1px solid red;
+    border: 2px solid red;
     font-size: 18px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     background: rgb(238, 174, 202);
     background: radial-gradient(circle, rgb(191, 210, 232), rgb(147, 200, 231) 100%);
-    box-shadow: 3px 2px 5px rgb(76, 242, 189);
+    box-shadow: 3px 2px 3px rgb(76, 242, 189);
     cursor: pointer;
+    color:  #000000;
 }
 
 .btn:hover {
